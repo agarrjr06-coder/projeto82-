@@ -57,3 +57,58 @@ A primeira versão foi criada principalmente em Google Sheets e Looker Studio. A
 4. Definir módulos e fluxos da V2.
 5. Definir arquitetura técnica.
 6. Desenvolver o MVP.
+
+
+## Aplicação web
+
+A V2 começa como uma aplicação web responsiva com aparência de aplicativo.
+
+### Stack inicial
+
+- Vite
+- HTML
+- CSS
+- JavaScript modular
+- Supabase para autenticação e banco de dados
+
+### Executando localmente
+
+```bash
+git clone https://github.com/agarrjr06-coder/projeto82-.git
+cd projeto82-
+npm install
+npm run dev
+```
+
+Depois, abra no navegador o endereço informado pelo Vite.
+
+### Configuração do Supabase
+
+Copie o arquivo `.env.example` para `.env` e preencha:
+
+```env
+VITE_SUPABASE_URL=
+VITE_SUPABASE_ANON_KEY=
+```
+
+O arquivo `.env` não deve ser enviado ao GitHub.
+
+### Estrutura inicial
+
+```text
+projeto82-/
+├── docs/
+├── src/
+│   ├── lib/
+│   │   └── supabase.js
+│   ├── styles/
+│   │   └── app.css
+│   └── main.js
+├── .env.example
+├── .gitignore
+├── index.html
+├── package.json
+└── README.md
+```
+
+A interface inicial utiliza dados simulados. O próximo passo é definir o modelo de dados antes de conectar os módulos ao Supabase.
